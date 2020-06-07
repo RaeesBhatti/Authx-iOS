@@ -51,6 +51,7 @@
 		B020AC9B248B7FE400F14D9E /* authxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = authxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B020AC9F248B7FE400F14D9E /* authxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authxUITests.swift; sourceTree = "<group>"; };
 		B020ACA1248B7FE400F14D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0392B5F248C88DA00E84CC8 /* authx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = authx.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		B020AC79248B7FE300F14D9E /* authx */ = {
 			isa = PBXGroup;
 			children = (
+				B0392B5F248C88DA00E84CC8 /* authx.entitlements */,
 				B020AC7A248B7FE300F14D9E /* AppDelegate.swift */,
 				B020AC7C248B7FE300F14D9E /* SceneDelegate.swift */,
 				B020AC81248B7FE300F14D9E /* ContentView.swift */,
@@ -438,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = authx/authx.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"authx/Preview Content\"";
 				DEVELOPMENT_TEAM = 7N4R2UL42P;
 				ENABLE_PREVIEWS = YES;
@@ -449,6 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = steelbrain.co.authx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = authx/authx.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"authx/Preview Content\"";
 				DEVELOPMENT_TEAM = 7N4R2UL42P;
 				ENABLE_PREVIEWS = YES;
@@ -469,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = steelbrain.co.authx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
