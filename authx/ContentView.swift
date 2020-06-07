@@ -45,8 +45,26 @@ struct CredentialsList: View {
     }
 }
 
+struct SheetView: View {
+    @Binding var showSheetView: Bool
+
+    var body: some View {
+        NavigationView {
+            Text("New Credentials")
+            .navigationBarTitle(Text("Add new credentials"), displayMode: .inline)
+                .navigationBarItems(trailing: Button(action: {
+                    print("Dismissing sheet view...")
+                    self.showSheetView.toggle()
+                }) {
+                    Text("Done").bold()
+                })
+        }
+    }
+}
+
 struct ContentView: View {
     @State private var selection = 0
+    @State var showSheetView = false
     @State var credentialsData = [
         Credential(Id: UUID.init(), Issuer: "Google", AccountName: "Something", Key: ""),
         Credential(Id: UUID.init(), Issuer: "Twitter", AccountName: "Something", Key: ""),
@@ -59,15 +77,31 @@ struct ContentView: View {
         TabView(selection: $selection){
             NavigationView {
                 VStack{
-                    Text("Password here!")
+                    Group {
+                        VStack (alignment: .center, spacing: 4) {
+                            Text("Google")
+                                .font(.headline)
+                            Text("Something")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Text("123 456").font(.largeTitle).bold()
+                    }
                     CredentialsList(credentialsData: credentialsData)
                 }
-                .navigationBarItems(trailing: Image(systemName: "plus"))
+                .navigationBarItems(trailing: Button(action: {
+                    self.showSheetView.toggle()
+                }) {
+                    Image(systemName: "plus")
+                }).sheet(isPresented: $showSheetView) {
+                    SheetView(showSheetView: self.$showSheetView)
+                }
             }
                 .tabItem {
                     VStack {
                         Image(systemName: "lock.shield")
-                        Text("Accounts")
+                        Text("Credentials")
                     }
                 }
                 .tag(0)
