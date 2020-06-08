@@ -86,7 +86,7 @@ struct ContentView: View {
                                 .foregroundColor(.secondary)
                         }
                         Spacer()
-                        Text("123 456").font(.largeTitle).bold()
+                        Text("123 456").font(.system(.largeTitle, design: .monospaced)).bold()
                     }
                     CredentialsList(credentialsData: credentialsData)
                 }
