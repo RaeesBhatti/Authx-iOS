@@ -100,7 +100,7 @@ struct ContentView: View {
             }
                 .tabItem {
                     VStack {
-                        Image(systemName: "lock.shield")
+                        Image(systemName: "lock.shield").font(.system(size: 24))
                         Text("Credentials")
                     }
                 }
@@ -109,7 +109,7 @@ struct ContentView: View {
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "gear")
+                        Image(systemName: "gear").font(.system(size: 24))
                         Text("Settings")
                     }
                 }
