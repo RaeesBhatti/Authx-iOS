@@ -93,7 +93,7 @@ struct ContentView: View {
                 .navigationBarItems(trailing: Button(action: {
                     self.showSheetView.toggle()
                 }) {
-                    Image(systemName: "plus")
+                    Image(systemName: "plus").font(.system(size: 24))
                 }).sheet(isPresented: $showSheetView) {
                     SheetView(showSheetView: self.$showSheetView)
                 }
