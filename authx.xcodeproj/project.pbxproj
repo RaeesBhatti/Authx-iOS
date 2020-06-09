@@ -16,6 +16,9 @@
 		B020AC8A248B7FE400F14D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B020AC88248B7FE400F14D9E /* LaunchScreen.storyboard */; };
 		B020AC95248B7FE400F14D9E /* authxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020AC94248B7FE400F14D9E /* authxTests.swift */; };
 		B020ACA0248B7FE400F14D9E /* authxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020AC9F248B7FE400F14D9E /* authxUITests.swift */; };
+		B0392B6B248EEFB400E84CC8 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0392B6A248EEFB400E84CC8 /* QRScanner.swift */; };
+		B0392B6C248EEFB400E84CC8 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0392B6A248EEFB400E84CC8 /* QRScanner.swift */; };
+		B0392B6D248EEFB400E84CC8 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0392B6A248EEFB400E84CC8 /* QRScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		B020AC9F248B7FE400F14D9E /* authxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authxUITests.swift; sourceTree = "<group>"; };
 		B020ACA1248B7FE400F14D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0392B5F248C88DA00E84CC8 /* authx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = authx.entitlements; sourceTree = "<group>"; };
+		B0392B6A248EEFB400E84CC8 /* QRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				B0392B5F248C88DA00E84CC8 /* authx.entitlements */,
 				B020AC7A248B7FE300F14D9E /* AppDelegate.swift */,
 				B020AC7C248B7FE300F14D9E /* SceneDelegate.swift */,
+				B0392B6A248EEFB400E84CC8 /* QRScanner.swift */,
 				B020AC81248B7FE300F14D9E /* ContentView.swift */,
 				B020AC83248B7FE400F14D9E /* Assets.xcassets */,
 				B020AC88248B7FE400F14D9E /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				B020AC80248B7FE300F14D9E /* authx.xcdatamodeld in Sources */,
 				B020AC82248B7FE300F14D9E /* ContentView.swift in Sources */,
 				B020AC7D248B7FE300F14D9E /* SceneDelegate.swift in Sources */,
+				B0392B6B248EEFB400E84CC8 /* QRScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B020AC95248B7FE400F14D9E /* authxTests.swift in Sources */,
+				B0392B6C248EEFB400E84CC8 /* QRScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B020ACA0248B7FE400F14D9E /* authxUITests.swift in Sources */,
+				B0392B6D248EEFB400E84CC8 /* QRScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
